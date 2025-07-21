@@ -20,8 +20,10 @@ const MyList: React.FC<ListProps> = ({ header, items, updateList }) => {
         {items.map((item) => (
           <li
             key={item.id}
-            style={{ textDecoration: item.clicked ? "line-through" : "none", cursor: "pointer" }}
+            role="listitem"
             onClick={() => updateList(item.id)}
+            style={item.clicked ? { textDecoration: 'line-through' } : {}}
+            
           >
             {item.text}
           </li>
