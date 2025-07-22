@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './components/About';
 import MyContainer from './components/MyContainer';
-import Header from './components/Hedear'
+import Header from './components/Header'
 
 function App() {
   return (
